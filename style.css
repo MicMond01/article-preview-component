@@ -1,0 +1,188 @@
+@import url(https://fonts.google.com/specimen/Manrope);
+
+:root{
+    --VeryDarkGrayishBlue: hsl(217, 19%, 35%);
+    --DesaturatedDarkBlue: hsl(214, 17%, 51%);
+    --GrayishBlue: hsl(212, 23%, 69%);
+    --LightGrayishBlue: hsl(210, 46%, 95%);
+    --font-family: 'Manrope', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-family)
+}
+
+body {
+    background-color: var(--LightGrayishBlue);
+    Font-size: 13px;
+    align-items: center;
+    justify-items: center;
+    display: flex;
+    height: 100%;
+
+}
+
+.container {
+    display: grid;
+    margin: 5rem 3rem;
+    border-radius: 1.5rem;
+    background-color: white;
+    height: 100%;
+    
+}
+
+.img-top {
+    border-radius: 1.5rem 1.5rem 0rem 0;
+    width: 100%;
+}
+
+.bottom-half {
+    padding: 2rem 1.5rem 1rem 1.5rem;
+}
+
+h2 {
+    color: var(--VeryDarkGrayishBlue);
+}
+
+.card-text {
+    padding: 1.5rem 0;
+    color: var(--DesaturatedDarkBlue);
+    line-height: 1.2rem;
+}
+
+.bottom {
+    display: flex;
+}
+
+.bottom img {
+    width: 3rem;
+    border-radius: 50%;
+}
+
+strong {
+    color: var(--VeryDarkGrayishBlue);
+}
+
+.details {
+    padding-left: 1rem;
+    margin: auto auto auto 0.51rem;
+    line-height: 1.3rem;
+}
+
+.details p {
+    color: var(--DesaturatedDarkBlue);
+}
+
+span {
+    height: 2rem;
+    width: 2rem;
+    background-color: var(--LightGrayishBlue);
+    border-radius: 50%;
+    color: var(--VeryDarkGrayishBlue);
+    display: flex;
+    cursor: pointer;
+    z-index: 99;
+    
+}
+
+i {
+    font-size: 1rem;
+    margin: auto;
+}
+
+.click {
+    display: none;
+}
+.bottom-top{
+    display: flex;
+    position: absolute;
+    background-color: var(--VeryDarkGrayishBlue);
+    height: 4rem;
+    border-radius: 0 0 1.5rem 1.5rem;
+    z-index: 10;
+    padding: 0 1.5rem 0;
+    width: 75%;
+    left: 12.5%;
+    transition: var(--VeryDarkGrayishBlue) 10s ease-in-out;
+
+
+} 
+
+.share {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    color: #fff; 
+    transition: var(--VeryDarkGrayishBlue) 10s ease-in-out;
+}
+
+.share i {
+    padding-left: 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;   
+}
+
+.icon-top {
+    display: flex;
+    float: right;
+}
+
+@media (min-width: 800px) {
+    body {
+        display: flex;
+        height: 100vh;
+    
+    }
+    
+    .container {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        
+    }
+    
+    .img-top {
+        height: 100%;
+        border-radius: 1.5rem 0rem 0rem 1.5rem;
+    }
+    
+    .bottom-half {
+        padding: 2rem 1.5rem 1rem 1.5rem;
+    }
+
+    
+    .bottom-top{
+        display: flex;
+        position: absolute;
+        top: 50%;
+        left: 60%;
+        width: 15rem;
+        z-index: 99;
+        padding: 0;
+        justify-content: center;
+        border-radius:1.5rem;
+
+    } 
+
+    .share {
+        z-index: 99;
+        border-radius: 1.5rem;
+    }
+
+    .share i {
+        padding-left: 1rem;
+        font-size: 1.5rem;
+        cursor: pointer;   
+    }
+
+    .icon-top {
+        display: flex;
+        float: right;
+    }
+
+
+}
